@@ -13,7 +13,7 @@ public class UserService {
     public String join(String userName, String password) {
 
         //userName 중복 체크
-        userRepository.findByUserName(userName)
+        userRepository.findByUserName(userName) //ExceptionManager 타서 conflict 찍혀 리턴
                 .ifPresent(user -> {
                     throw new RuntimeException(userName + "는(은) 이미 있습니다");
                 });
