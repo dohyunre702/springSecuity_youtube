@@ -1,1 +1,19 @@
+server:
+  servlet:
+    encoding:
+      force-response: true
 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: localhost
+    username: root
+    password: q1
+
+jwt:
+  token:
+    secret: hello
