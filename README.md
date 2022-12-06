@@ -1,3 +1,3 @@
-﻿# springSecuity_youtube
+﻿# springSecuity
 
 -spring security 복습
